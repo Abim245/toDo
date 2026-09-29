@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Focus List</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Focus List</h1>
+  <p class="sub">Up to 15 tasks. Make each one count.</p>
+
+  <div class="card">
+    <form id="f">
+      <input type="text" id="txt" placeholder="What needs doing?" maxlength="80" autocomplete="off" required>
+      <select id="pri" aria-label="Priority"><option>High</option><option selected>Medium</option><option>Low</option></select>
+      <button class="add" id="btn">Add</button>
+    </form>
+    <div class="meta"><span id="count">0 / 15 tasks</span><span id="left"></span></div>
+    <div class="bar"><i id="bar"></i></div>
+  </div>
+
+  <div class="card msg" id="msg"></div>
+  <div class="card rec" id="rec" hidden><small>Recommended next</small><p id="recT"></p></div>
+
+  <div class="card"><h2>To do</h2><ul id="open"></ul></div>
+  <div class="card"><h2>Done</h2><ul id="done"></ul></div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
