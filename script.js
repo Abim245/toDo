@@ -1,4 +1,4 @@
-function(){
+(() => {
   var MAX=15, todos=[], nextId=1, W={High:3,Medium:2,Low:1};
   var quotes=[
     "A clear list is a clear mind. Add your first task and let's begin!",
@@ -58,4 +58,4 @@ function(){
     render();
   };
   render();
-};
+})();
